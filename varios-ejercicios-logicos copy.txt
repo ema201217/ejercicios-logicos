@@ -1,0 +1,25 @@
+/* 
+EJERCICIO 1. LOS CUATRO ATLETAS
+De cuatro corredores de atletismo se sabe que C ha llegado inmediatamente detrás de B, y D ha llegado en medio de A y C. ¿Podría usted calcular el orden de llegada?
+*/
+
+/*  
+EJERCICIO 2. CABALLOS 
+ El caballo de Mac es mas oscuro que el de Smith, pero mas rápido y mas viejo que el de Jack, que es aun mas lento que el de Willy, que es mas joven que el de Mac, que es mas viejo que el de Smith,que es mas claro que el de Willy,aunque el de Jack es mas lento y mas oscuro que el de Smith. ¿Cual es el mas viejo, cual es mas lento y cual es mas claro?
+*/
+
+
+/* 
+EJERCICIO 3. LOS CUATRO PERROS
+Tenemos cuatro perros: un galgo, un dogo, un alano y un podenco. Este ultimo come mas que el galgo; el alano come mas que el galgo y menos que el dogo, pero este come mas que el podenco. ¿Cual de los cuatro perros come menos?
+*/
+
+/* 
+EJERCICIO 4. SEIS AMIGOS DE VACACIONES 
+Seis amigos desean pasar sus vacaciones juntos y deciden cada dos, utilizar diferente medios de transportes; sabemos que Alejandro no utiliza el coche ya que este acompaña a Benito que no va en avion.Andres viaja en avion. Si Carlos no va acompañado de Dario ni hace uso del avion, podría usted decirnos en que medio de transportes llega a su destino Tomas.
+*/
+
+/*
+EJERCICIO 5. SILENCIO 
+Si Angela habla mas bajo que Rosa y Celia habla mas alto que Rosa,¿habla Angela mas alto o mas bajo que Celia?
+*/
