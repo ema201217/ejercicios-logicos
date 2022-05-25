@@ -9,26 +9,18 @@ let hermano3 = 120 - hermano1 - hermano2;
 // console.log(hermano3);
 
 /* 2-Seis amigos viven en un edificio, cada uno en un piso distinto, Gabriela vive más abajo que Jorge, pero más arriba que Marcos; Nicolás vive tres pisos más abajo que Gabriela, Abel vive dos pisos más arriba que Gabriela y a cuatro pisos de Sandra. ¿Quién vive en el tercer piso?
-
 Gabriela < Jorge
 Gabriela > Marcos
 Nicolas <3 Gabriela
 Abel 2> Gabriela
 Abel 4> Sandra
 
-E.	Abel 
-C.	Marcos
-B.	Gabriela 
-D.	Jorge
-A.	Sandra 
-F.  Nicolas
-
-F.  Nicolas
-A.	Sandra 
-D.	Jorge
-B.	Gabriela 
-C.	Marcos
-E.	Abel 
+A.	Sandra 5 
+E.	Abel 1
+D.	Jorge 4
+B.	Gabriela 3
+C.	Marcos 2
+F.  Nicolas 6
 */
 
 const amigos = {
@@ -48,11 +40,11 @@ function logaritmo1() {
     amigos.Gabriela < amigos.Jorge &&
     amigos.Gabriela > amigos.Marcos &&
     // Nicolás vive tres pisos más abajo que Gabriela 
-    amigos.Nicolas - 3 === amigos.Gabriela &&
+    amigos.Nicolas + 3 === amigos.Gabriela &&
     // Abel vive dos pisos más arriba que Gabriela 
-    amigos.Abel + 2 === amigos.Gabriela &&
+    amigos.Abel - 2 === amigos.Gabriela &&
     // Abel vive a cuatro pisos de Sandra 
-    amigos.Abel + 4 === amigos.Sandra &&
+    amigos.Abel - 4 === amigos.Sandra &&
 
     // Los valores no pueden ser iguales - lógica correspondiente 
     amigos.Gabriela != amigos.Jorge &&

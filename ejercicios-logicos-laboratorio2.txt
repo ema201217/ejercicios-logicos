@@ -1,0 +1,92 @@
+1
+Hacer un programa para ingresar por teclado un número y luego emitir por pantalla un cartel aclaratorio indicando si el mismo es positivo, negativo o cero.
+
+
+2
+Hacer un programa para ingresar por teclado dos números y luego informar por pantalla con un cartel aclaratorio si el primer número es múltiplo del segundo. 
+
+
+3
+Hacer un programa para ingresar por teclado un número y luego informar por pantalla con un cartel aclaratorio si el mismo es par o impar.
+
+
+4
+Hacer un programa para ingresar por teclado dos números y luego informar por pantalla la diferencia absoluta entre ambos. Ejemplo 1: Si se ingresan 3 y 8, se emite 5. Si se ingresan 8 y 3, se emite 5. Ejemplo 2: Si se ingresan -3 y 9, se emite 12. Si se ingresan -12 y -1, se emite 11.
+
+
+5
+Un negocio de perfumería efectúa descuentos según el importe de la venta. - Si el importe es menor a $100 aplicar un descuento del 5% - Si el importe es entre $100 y hasta $500 aplicar un descuento del 10% - Si el importe es mayor a $500 aplicar un descuento del 15% Hacer un programa donde se ingresa el importe original sin descuento y que se informe por pantalla el importe con el descuento ya aplicado.
+
+
+6
+Hacer un programa para ingresar por teclado tres números y luego determinar e informar con una leyenda aclaratoria si los tres son iguales entre sí, caso contrario no emitir nada. Ayuda: Si A es igual a B y B es igual a C, entonces A y C son iguales.
+
+
+7
+Hacer un programa para ingresar por teclado tres números e informar con una leyenda aclaratoria si los tres son todos distintos entre sí, caso contrario no emitir nada. Ayuda: Si A es distinto de B y B es distinto de C, eso no signica que A y C sean distintos. Ejemplo: A=8, B=6 y C=8.
+
+
+8
+Basado en los 2 ejercicios anteriores, hacer un programa para ingresar por teclado la longitud de los tres lados de un triángulo y luego listar que tipo de triángulo es: 
+- Equilátero: si los tres lados son iguales.
+- Isósceles: si dos de los tres lados son iguales.
+- Escaleno: si los tres lados son distintos entre sí.
+
+
+9
+Hacer un programa para ingresar tres números y listar el máximo de ellos.
+
+
+10
+Hacer un programa para ingresar cinco números y listar el máximo de ellos.
+
+
+11
+Hacer un programa para ingresar cinco números y listar cuántos de esos cinco números son positivos.
+
+
+12
+Hacer un programa para leer tres números diferentes y determinar e informar el número del medio. Ejemplo: si se ingresan 6, 10, 8, se emitirá 8.
+
+
+13
+Hacer un programa para ingresar por teclado la fecha de nacimiento de una persona, ingresando día, mes y año como 3 datos individuales. Luego ingresar la fecha actual ingresando día, mes y año como 3 datos individuales. Calcular luego la edad en años de esa persona y listarlo por pantalla. 
+Ejemplo 1. Si se ingresa como fecha de nacimiento: 3/12/2000 y la fecha actual es 26/2/2019 la edad de esa persona es 18 ya que los 19 recién los cumple en diciembre. 
+Ejemplo 2. Si se ingresa como fecha de nacimiento: 3/1/2000 y la fecha actual es 26/2/2019 la edad de esa persona es 19. Ejemplo 3. Si se ingresa como fecha de nacimiento: 28/2/2000 y la fecha actual es 26/2/2019 la edad de esa persona es 18 ya que le faltan 2 días para cumplir los 19 años.
+
+
+14
+Un año es bisiesto si es múltiplo de 4, exceptuando a los años que son múltiplos de 100 pero que no sean múltiplos de 400. Esto último significa que el año 1900 no es bisiesto, pero el año 2000 si lo es. Hacer un programa para que ingresar un año y listar por pantalla si es bisiesto o no lo es. 
+
+Ejemplo 1. Si se ingresa el año 2020 se indicará como bisiesto. 
+Ejemplo 2. Si se ingresa el año 2019 se indicará como no bisiesto. 
+Ejemplo 3. Si se ingresa el año 1800 o 1900 se indicará como no bisiesto. Ejemplo 4. Si se ingresa el año 1600 o 2000 se indicará como bisiesto.
+
+
+15
+Hacer un programa para ingresar por teclado las cuatro notas de los exámenes obtenidas por un alumno y luego emitir uno solo de los cartel de acuerdo a las siguientes condiciones: 
+- “Promociona”, si obtuvo en los cuatro exámenes nota 7 o más. 
+- “Rinde examen final”, si obtuvo nota 4 o más en por lo menos tres exámenes. 
+- “Recupera Parciales”, si obtuvo nota 4 o más en por lo menos uno de los exámenes. 
+- “Recursa la materia”, si no aprobó ningún examen parcial.
+
+
+16
+Hacer un programa para ingresar por teclado cuatro números. Si los valores que se ingresaran están ordenados en forma creciente, emitir el mensaje “Conjunto Ordenado”, caso contrario emitir el mensaje: “Conjunto Desordenado”. 
+Ejemplo 1: si los números que se ingresan son 8, 10, 12 y 14, entonces están ordenados. 
+Ejemplo 2: si los números que se ingresan son 8, 12, 12 y 14, entonces están ordenados. Ejemplo 3: si los números que se ingresan son 10, 8, 12 y 14, entonces están desordenados.
+
+
+17
+Una empresa de electricidad cobra el servicio a sus clientes de acuerdo a la siguiente escala: 
+$ 10 por kilovatio (kW) por el consumo hasta los primeros 100 kW de consumo. 
+$ 12 por kW por el consumo excedente de 101 a 200 kW. 
+$ 15 por kW por el consumo excedente de 201 kW en adelante.
+
+Hacer un programa para que, dado el consumo en kilovatios de un determinado cliente, el programa calcule e informe el total a pagar por el mismo. 
+Ejemplo 1: Un consumo de 55 kW, se calculará: $ 10 x 55= $ 550 
+Ejemplo 2: Un consumo de 125 kW, se calculará: $ 10 x 100 + $ 12 x 25 = $1300.
+Ejemplo 3: Un consumo de 250 kW, se calculará: $ 10 x 100 + $ 12 x 100 + $ 15 x 50 = $ 2950.
+
+
+
