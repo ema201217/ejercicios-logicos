@@ -5,7 +5,7 @@ def sueldo(horas, valorPorHora):
     resultado = horas * valorPorHora
     print(resultado)
 
-# sueldo(10,200)
+# sueldo(10,2200)
 
 # 2
 # Hacer un programa que solicite por teclado que se ingresen dos números y luego guardarlos en dos variables distintas. A continuación se deben intercambiar mutuamente los valores en ambas variables y mostrarlos por pantalla.
@@ -47,8 +47,7 @@ def asientosAvion(disponibles, vendidos):
     porcentajeVendidos = vendidos * 100 / disponibles
 
     print(
-        f"El porcentaje de asientos disponible es {porcentajeDisponibles} \ny los no disponibles son {porcentajeVendidos}")
-
+        f"El porcentaje de asientos disponible es {porcentajeDisponibles}% \ny los no disponibles son {porcentajeVendidos}%")
 
 # asientosAvion(200, 80)
 
@@ -64,7 +63,7 @@ def alfajores(cantidadA, cantidadB, cantidadC):
     porcentajeA = cantidadA * cienSobreAlfajoresTotal
     porcentajeB = cantidadB * cienSobreAlfajoresTotal
     porcentajeC = cantidadC * cienSobreAlfajoresTotal
-    print(f"A:{porcentajeA} B:{porcentajeB} y C:{porcentajeC}")
+    print(f"A:{porcentajeA}% B:{porcentajeB}% y C:{porcentajeC}%")
 
 
 # alfajores(100, 25, 75)
@@ -72,6 +71,7 @@ def alfajores(cantidadA, cantidadB, cantidadC):
 # 6
 # Hacer un programa para que un comercio ingrese por teclado la recaudación en pesos para cada una de las cuatro semanas del mes. El programa debe listar la recaudación promedio por semana y el porcentaje de recaudación por semana.
 # Ejemplo. Si se ingresa $ 1600, $ 1200, $ 4800 y $ 400 se listara como recaudación promedio $ 2000 y como porcentajes por semana: 20%, 15%, 60% y 5%.
+
 
 def recaudacionPromedio(semana1, semana2, semana3, semana4):
     totalMensual = semana1 + semana2 + semana3 + semana4
@@ -239,14 +239,13 @@ def cajeroAutomatico(importe):
             importe -= 200
             billetes200 += 1
         elif importe >= 100:
-            billetes100 += 1
             importe -= 100
+            billetes100 += 1
         else:
             importe = 0
 
     print(f"Entregar {billetes1000} billete/s de $ 1.000, {billetes500} billete/s de $ 500, {billetes200} billete/s de $ 200 y {billetes100} billete/s de $ 100")
 
-cajeroAutomatico(2500)
-cajeroAutomatico(3400)
-cajeroAutomatico(300)
-
+# cajeroAutomatico(2500)
+# cajeroAutomatico(3400)
+# cajeroAutomatico(300)

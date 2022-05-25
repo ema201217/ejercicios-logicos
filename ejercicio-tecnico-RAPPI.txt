@@ -1,0 +1,13 @@
+// A vending machine has the following denominations: 1$, 5$, 10$, 25$, 50$ and 100$. Your task is to write a program that will be used in a vending machine to return change. Assume that the vending machine will always want to return the least number of coins or notes. Devise a function getChange(m, p) where M is how much money was inserted into the machine and P the price of the item selected, that returns an array of integers representing the number of each denomination to return. 
+
+// Una máquina expendedora tiene las siguientes denominaciones: 1$, 5$, 10$, 25$, 50$ y 100$. Su tarea es escribir un programa que se utilizará en una máquina expendedora para devolver el cambio. Suponga que la máquina expendedora siempre querrá devolver la menor cantidad de monedas o billetes. Diseñe una función getChange(m, p) donde M es cuánto dinero se insertó en la máquina y P el precio del artículo seleccionado, que devuelve una matriz de números enteros que representan el número de cada denominación a devolver 
+
+
+// Example:
+// getChange(95000000000, 123) // should return [2,0,0,1,1,949999998]
+// getChange(500, 99) // should return [1,0,0,0,0,4]
+// getChange(200, 91) // should return [4,1,0,0,0,1]
+// getChange(250, 123) // should return [2,0,0,1,0,1]
+
+
+//javier.podavini@rappi.com

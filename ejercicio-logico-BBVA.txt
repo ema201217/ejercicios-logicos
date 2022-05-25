@@ -1,0 +1,22 @@
+Ejercicios- Semillero COBOL BBVA
+
+
+1-Entre tres hermanos deben repartirse $120 . El primero se lleva 7/15 del total, el segundo 5/12 del total y el tercero el resto. ¿Cuánto dinero se ha llevado cada uno?
+
+
+
+2-Seis amigos viven en un edificio, cada uno en un piso distinto, Gabriela vive más abajo que Jorge, pero más arriba que Marcos; Nicolás vive tres pisos más abajo que Gabriela, Abel vive dos pisos más arriba que Gabriela y a cuatro pisos de Sandra. ¿Quién vive en el tercer piso?
+A.	Sandra
+B.	Gabriela 
+C.	Marcos
+D.	Jorge
+E.	Abel
+
+
+3-¿Quién es el Nieto del abuelo del padre de Javier?
+
+A)El abuelo del hijo de Javier
+B) El abuelo del padre de Javier
+C) Javier
+D) El abuelo de Javier
+E) El padre de Javier
