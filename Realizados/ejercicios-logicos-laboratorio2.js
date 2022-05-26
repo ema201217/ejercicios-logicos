@@ -2,7 +2,7 @@
 // Hacer un programa para ingresar por teclado un número y luego emitir por pantalla un cartel aclaratorio indicando si el mismo es positivo, negativo o cero.
 
 const isNumber = (numero) =>
-  numero > 0 ? "Positivo" : numero < 0 ? "Negativo" : "Cero";
+  numero > 0 ? "Positivo" : numero < 0 ? "Negativo" : "Cero"; // si el numero es mayor a 0 es positivo, si es menor a 0 es negativo sino es 0.
 
 // console.log(isNumber(2));
 
@@ -10,9 +10,9 @@ const isNumber = (numero) =>
 // Hacer un programa para ingresar por teclado dos números y luego informar por pantalla con un cartel aclaratorio si el primer número es múltiplo del segundo.
 
 const isMultiplo = (n1, n2) => {
-  return n1 % n2 === 0
+  return n1 % n2 === 0 // si dividimos el numero 1 con el numero 2 y el resto de la division es 0 quiere decir que es multiplo de numero 2.
     ? `El numero ${n1} es múltiplo de ${n2}`
-    : `El numero ${n1} NO es múltiplo de ${n2}`;
+    : `El numero ${n1} NO es múltiplo de ${n2}`; // si la condición no se cumple imprime que no es múltiplo
 };
 
 // console.log(isMultiplo(77, 6));
@@ -23,7 +23,7 @@ const isMultiplo = (n1, n2) => {
 // Hacer un programa para ingresar por teclado un número y luego informar por pantalla con un cartel aclaratorio si el mismo es par o impar.
 
 const parOrImpar = (numero) =>
-  numero % 2 === 0
+  numero % 2 === 0 // si el numero lo dividimos por dos y el resto es 0 entonces es par sino sera impar
     ? `El numero ${numero} es par`
     : `El numero ${numero} es impar`;
 
@@ -36,13 +36,13 @@ const parOrImpar = (numero) =>
 
 const diferencias = (n1, n2) => {
   let counter = 0;
-  const min = n1 < n2 ? n1 : n2;
-  const max = n1 > n2 ? n1 : n2;
+  const min = n1 < n2 ? n1 : n2; // identificamos cual es el menor
+  const max = n1 > n2 ? n1 : n2; // identificamos cual es el mayor
 
+  // creamos un bucle comenzando desde el numero mas chico hasta llegar al mas grande
   for (let i = min; i <= max; i++) {
-    if (i != max) {
-      counter++;
-    }
+    // si la variable i no llega aun al numero mayor va a ir aumentando en uno el contador
+    i != max && counter++;
   }
   return counter;
 };
@@ -56,7 +56,11 @@ const diferencias = (n1, n2) => {
 // Un negocio de perfumería efectúa descuentos según el importe de la venta. - Si el importe es menor a $100 aplicar un descuento del 5% - Si el importe es entre $100 y hasta $500 aplicar un descuento del 10% - Si el importe es mayor a $500 aplicar un descuento del 15% Hacer un programa donde se ingresa el importe original sin descuento y que se informe por pantalla el importe con el descuento ya aplicado.
 
 const perfumeria = (price) => {
+  // determinamos con un if ternario el tipo de descuento correspondiente dependiendo del precio que se introduzca como argumento de la función.
   const discount = price < 100 ? 5 : price > 100 && price <= 500 ? 10 : 15;
+
+  // al precio le restamos el porcentaje a descontar
+
   const result = price - (price * discount) / 100;
   return `El precio con descuento es de ${result} y sin el descuento seria ${price}`;
 };
@@ -67,7 +71,7 @@ const perfumeria = (price) => {
 // Hacer un programa para ingresar por teclado tres números y luego determinar e informar con una leyenda aclaratoria si los tres son iguales entre sí, caso contrario no emitir nada. Ayuda: Si A es igual a B y B es igual a C, entonces A y C son iguales.
 
 const sonIguales = (n1, n2, n3) =>
-  n1 === n2 && n2 === n3 ? "Los números son iguales" : "";
+  n1 === n2 && n2 === n3 ? "Los números son iguales" : ""; // si numero 1 es igual al numero 2 y el numero 2 es igual al numero 3 entonces los numeros son iguales.
 
 // console.log(sonIguales(10, 20, 10));
 // console.log(sonIguales(10, 10, 10));
@@ -76,7 +80,7 @@ const sonIguales = (n1, n2, n3) =>
 // Hacer un programa para ingresar por teclado tres números e informar con una leyenda aclaratoria si los tres son todos distintos entre sí, caso contrario no emitir nada. Ayuda: Si A es distinto de B y B es distinto de C, eso no significa que A y C sean distintos. Ejemplo: A=8, B=6 y C=8.
 
 const sonDistintos = (n1, n2, n3) =>
-  n1 !== n2 && n2 !== n3 ? "Los números son distintos" : "";
+  n1 !== n2 && n2 !== n3 ? "Los números son distintos" : ""; // si el numero 1 es distinto del numero 2 y el numero 2 es distinto del numero 3 entonces son distintos
 
 // console.log(sonDistintos(10, 20, 10));
 // console.log(sonDistintos(8, 8, 8));
@@ -88,18 +92,20 @@ const sonDistintos = (n1, n2, n3) =>
 // - Escaleno: si los tres lados son distintos entre sí.
 
 const triangulos = (l1, l2, l3) =>
-  l1 == l2 && l2 == l3 && l1 == l3
+  l1 == l2 && l2 == l3 // si el lado 1 es iguala al lado 2 y el lado 2 es igual al lado 3 es un Equilátero
     ? "Equilátero"
-    : l1 == l2 || l2 == l3 || l1 == l3
+    : l1 == l2 || l2 == l3 || l1 == l3 // si el lado 1 es igual al lado 2 o el lado 2 es igual al lado 3 o el lado 1 es igual al lado 3 es Isosceles
     ? "Isósceles"
-    : "Escaleno";
+    : "Escaleno"; // sino es un Escaleno
 
-// console.log(triangulos(10, 20, 10));
-// console.log(triangulos(10, 10, 10));
+//  console.log(triangulos(10, 20, 10));
+//  console.log(triangulos(10, 10, 10));
 // console.log(triangulos(10, 20, 30));
+
 // 9
 // Hacer un programa para ingresar tres números y listar el máximo de ellos.
 
+// si numero 1 es mayor que numero 2 entonces numero 1 es el mayor sino si numero 2 es mayor que el numero3 entonces el numero 2 es el mayor sino el mayor es el numero
 const elMayor = (n1, n2, n3) => (n1 > n2 ? n1 : n2 > n3 ? n2 : n3);
 
 // console.log(elMayor(20, 30, 111));
@@ -110,13 +116,12 @@ const elMayor = (n1, n2, n3) => (n1 > n2 ? n1 : n2 > n3 ? n2 : n3);
 // Hacer un programa para ingresar cinco números y listar el máximo de ellos.
 
 const elMayor2 = (n1, n2, n3, n4, n5) => {
+  // creo un array con los valores que ingresan a la función
   let arr = [n1, n2, n3, n4, n5];
+  // inicializamos una variable que va a tomar el valor del numero mayor al finalizar el bucle "foreach"
   let mayor = 0;
-  arr.forEach((n) => {
-    if (mayor === 0 || mayor < n) {
-      mayor = n;
-    }
-  });
+  // recorremos el array creado y preguntamos si el numero mayor es igual a 0 o mayor es menor al numero que se esta recorriendo del array ("n") entonces mayor va a ser igual al numero mayor.
+  arr.forEach((n) => (mayor === 0 || mayor < n) && (mayor = n));
   return mayor;
 };
 
@@ -128,8 +133,11 @@ const elMayor2 = (n1, n2, n3, n4, n5) => {
 // Hacer un programa para ingresar cinco números y listar cuántos de esos cinco números son positivos.
 
 const contadorPositivos = (n1, n2, n3, n4, n5) => {
+  // creo un array con los valores que ingresan a la función
   let arr = [n1, n2, n3, n4, n5];
+  // inicializamos un contador en 0
   let contador = 0;
+  // recorremos el nuevo array y preguntamos si el numero que va recorriendo ("n") es mayor a 0 entonces que me aumente en uno el contador de números positivos
   arr.forEach((n) => {
     n > 0 && contador++;
   });
@@ -144,8 +152,11 @@ const contadorPositivos = (n1, n2, n3, n4, n5) => {
 // Hacer un programa para leer tres números diferentes y determinar e informar el número del medio. Ejemplo: si se ingresan 6, 10, 8, se emitirá 8.
 
 const elMedio = (n1, n2, n3) => {
+  // identificamos el numero menor obtenido como parámetro
   const min = n1 < n2 && n1 < n3 ? n1 : n2 < n1 && n2 < n3 ? n2 : n3;
+  // obtenemos el numero mayor obtenido como parámetro
   const max = n1 > n2 && n1 > n3 ? n1 : n2 > n1 && n2 > n3 ? n2 : n3;
+  // si el numero menos es menor que numero 1 y numero mayor es mayor que el numero 1 entonces el numero entremedio es el numero 1 , si el numero menor es menor que el numero 2 y el numero mayor es mayor que el numero 2 entonces el numero 2 es el numero intermedio sino se cumple ninguna condición es el numero 3.
   const medium = min < n1 && max > n1 ? n1 : min < n2 && max > n2 ? n2 : n3;
   return medium;
 };
@@ -164,22 +175,22 @@ const elMedio = (n1, n2, n3) => {
 //Ejemplo 3. Si se ingresa como fecha de nacimiento: 28/2/2000 y la fecha actual es 26/2/2019 la edad de esa persona es 18 ya que le faltan 2 días para cumplir los 19 años.
 
 const calcularAnios = (fechaNac, fechaActual) => {
-  fechaNac = fechaNac.split("/").map((n) => +n);
-  fechaActual = fechaActual.split("/").map((n) => +n);
-  let edad = fechaActual[2] - fechaNac[2];
+  fechaNac = fechaNac.split("/").map((n) => +n); // convierto el string en un array de números
+  fechaActual = fechaActual.split("/").map((n) => +n); // convierto el string en un array de números
+  let edad = fechaActual[2] - fechaNac[2]; // obtengo la diferencia entre los años de diferencia
   if (
-    fechaNac[1] > fechaActual[1] ||
+    fechaNac[1] > fechaActual[1] || // el indice 1 corresponde al numero del mes; si el mes de nacimiento es mayor que el del mes actual o si el mes de nacimiento es igual al mes actual y el numero de dia de nacimiento es mayor al del dia actual
     (fechaActual[1] === fechaNac[1] && fechaNac[0] > fechaActual[0])
   ) {
-    edad -= 1;
+    edad--; // le restamos a la edad un 1
   }
   return `La persona tiene ${edad} años`;
 };
 
-console.log(calcularAnios("3/12/2000", "26/2/2019"));
-console.log(calcularAnios("3/1/2000", "26/2/2019"));
-console.log(calcularAnios("28/2/2000", "26/2/2019"));
-console.log(calcularAnios("3/12/2011", "25/5/2022"));
+// console.log(calcularAnios("3/12/2000", "26/2/2019"));
+// console.log(calcularAnios("3/1/2000", "26/2/2019"));
+// console.log(calcularAnios("28/2/2000", "26/2/2019"));
+// console.log(calcularAnios("3/12/2011", "25/5/2022"));
 
 // 14
 // Un año es bisiesto si es múltiplo de 4, exceptuando a los años que son múltiplos de 100 pero que no sean múltiplos de 400. Esto último significa que el año 1900 no es bisiesto, pero el año 2000 si lo es. Hacer un programa para que ingresar un año y listar por pantalla si es bisiesto o no lo es.
@@ -190,14 +201,15 @@ console.log(calcularAnios("3/12/2011", "25/5/2022"));
 // Ejemplo 4. Si se ingresa el año 1600 o 2000 se indicará como bisiesto.
 
 const isBisiesto = (anio) => {
+  // si dividimos el año por 4 y el resto es igual a 0, y al dividir el año por 100 y es distinto a 0, entonces es un año bisiesto; o si el año es dividido por 400 y el resto es 0 entonces también es bisiesto
   let isBisiesto = (anio % 4 === 0 && anio % 100 !== 0) || anio % 400 === 0;
   return isBisiesto;
 };
 
-console.log(isBisiesto(2020));
-console.log(isBisiesto(2019));
-console.log(isBisiesto(1800));
-console.log(isBisiesto(1600));
+// console.log(isBisiesto(2020));
+// console.log(isBisiesto(2019));
+// console.log(isBisiesto(1800));
+// console.log(isBisiesto(1600));
 
 // 15
 // Hacer un programa para ingresar por teclado las cuatro notas de los exámenes obtenidas por un alumno y luego emitir uno solo de los cartel de acuerdo a las siguientes condiciones:
@@ -232,11 +244,11 @@ const examenesDevolucion = (nota1, nota2, nota3, nota4) => {
   return respuesta;
 };
 
-console.log(examenesDevolucion(6, 6, 6, 6));
-console.log(examenesDevolucion(2, 3, 4, 4));
-console.log(examenesDevolucion(6, 6, 1, 6));
-console.log(examenesDevolucion(8, 8, 8, 7));
-console.log(examenesDevolucion(2, 2, 3, 2));
+// console.log(examenesDevolucion(6, 6, 6, 6));
+// console.log(examenesDevolucion(2, 3, 4, 4));
+// console.log(examenesDevolucion(6, 6, 1, 6));
+// console.log(examenesDevolucion(8, 8, 8, 7));
+// console.log(examenesDevolucion(2, 2, 3, 2));
 
 // 16
 // Hacer un programa para ingresar por teclado cuatro números. Si los valores que se ingresaran están ordenados en forma creciente, emitir el mensaje “Conjunto Ordenado”, caso contrario emitir el mensaje: “Conjunto Desordenado”.
@@ -244,13 +256,13 @@ console.log(examenesDevolucion(2, 2, 3, 2));
 // Ejemplo 2: si los números que se ingresan son 8, 12, 12 y 14, entonces están ordenados.
 // Ejemplo 3: si los números que se ingresan son 10, 8, 12 y 14, entonces están desordenados.
 
-/* const isOrder = (n1, n2, n3, n4) => {
-  let arr = [n1, n2, n3, n4];
-  for (let i = 0; i < arr.length; i++) {
-    
-
-  }
-}; */
+const isOrder = (n1, n2, n3, n4) => {
+  let isOrder = n1 <= n2 && n2 <= n3 && n3 <= n4; // si el numero 1 es menor o igual al numero 2 y el numero 2 es menor o igual que el numero 3 y si el numero 3 es menor o igual al numero 4.
+  return isOrder ? "Números ordenados" : "Números desordenados"; // si "isOrder" es true entonces están ordenados sino están desordenados
+};
+console.log(isOrder(8, 10, 12, 14));
+console.log(isOrder(8, 12, 12, 14));
+console.log(isOrder(10, 8, 12, 14));
 
 // 17
 // Una empresa de electricidad cobra el servicio a sus clientes de acuerdo a la siguiente escala:
@@ -262,3 +274,18 @@ console.log(examenesDevolucion(2, 2, 3, 2));
 // Ejemplo 1: Un consumo de 55 kW, se calculará: $ 10 x 55= $ 550
 // Ejemplo 2: Un consumo de 125 kW, se calculará: $ 10 x 100 + $ 12 x 25 = $1300.
 // Ejemplo 3: Un consumo de 250 kW, se calculará: $ 10 x 100 + $ 12 x 100 + $ 15 x 50 = $ 2950.
+
+const servicioElectrico = (consumo) => {
+  let cobroMinimo = 10 * 100; // obtenemos el precio al superar el primer nivel de cobro
+  let cobroIntermedio = 12 * 100; // obtenemos el precio al superar el segundo nivel de cobro
+
+  return consumo > 200 // si el consumo es mayor a 200 kW el importe a cobrar sera
+    ? cobroMinimo + cobroIntermedio + (consumo - 200) * 15 // la suma del precio del primer nivel completo mas el segundo nivel completo mas la diferencia entre el consumo menos los dos primeros niveles de kW (100 + 100) multiplicado con el valor del KW (15)
+    : consumo > 100 && consumo <= 200 // si el consumo es mayor a 100 y menor o igual a 200
+    ? cobroMinimo + (consumo - 100) * 12 // sumame el valor del primer nivel completo mas la diferencia del consumo menos los 100 kw limites del primer nivel de cobro multiplicado por el precio del kW (12)
+    : consumo * 10; // sino se cumple ninguna de las condiciones quiere decir que consumo es menor a 100 kw y corresponde al cobro del consumo que existe por los 10 que corresponde al primer nivel de cobro.
+};
+
+console.log(servicioElectrico(55));
+console.log(servicioElectrico(125));
+console.log(servicioElectrico(250));
